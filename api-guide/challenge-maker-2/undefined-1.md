@@ -14,7 +14,7 @@ description: 타 사용자의 인증에 투표를 진행합니다.
 
 {% swagger baseUrl="{host}" method="post" path="/vote/{certification_no}" summary="Vote Certification" %}
 {% swagger-description %}
-챌린지에 해당하는 인증을 업로드합니다.
+루틴에 해당하는 인증을 업로드합니다.
 {% endswagger-description %}
 
 {% swagger-parameter in="body" name="status" type="boolean" required="true" %}

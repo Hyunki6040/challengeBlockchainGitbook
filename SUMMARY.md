@@ -8,10 +8,10 @@
 
 ## API 가이드 <a href="#api-guide" id="api-guide"></a>
 
-* [챌린지](api-guide/challenge-maker/README.md)
-  * [챌린지 생성](api-guide/challenge-maker/undefined.md)
-  * [챌린지 조회](api-guide/challenge-maker/undefined-1.md)
-  * [챌린지 수정, 삭제](api-guide/challenge-maker/undefined-2.md)
+* [루틴](api-guide/challenge-maker/README.md)
+  * [루틴 생성](api-guide/challenge-maker/undefined.md)
+  * [루틴 조회](api-guide/challenge-maker/undefined-1.md)
+  * [루틴 수정, 삭제](api-guide/challenge-maker/undefined-2.md)
 * [인증](api-guide/challenge-maker-1/README.md)
   * [인증 조회](api-guide/challenge-maker-1/undefined.md)
   * [인증 업로드](api-guide/challenge-maker-1/undefined-1.md)

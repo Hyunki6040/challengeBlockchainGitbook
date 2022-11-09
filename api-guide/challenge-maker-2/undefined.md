@@ -29,8 +29,8 @@ JWT Token
     "result" : {
         "my_vote_count": 남은 투표 횟수,
         "certification_no": "인증 번호",
-        "challenge_title" : "챌린지명",
-        "challenge_certification": "인증기준",
+        "routine_title" : "루틴명",
+        "routine_certification": "인증기준",
         "certification": "인증내용",
         "certification_date": "인증일",
         "reason": "실패 사유 목록(list)"

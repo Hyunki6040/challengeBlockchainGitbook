@@ -1,16 +1,16 @@
 ---
-description: 생성된 챌린지의 정보를 수정, 삭제합니다.
+description: 생성된 루틴의 정보를 수정, 삭제합니다.
 ---
 
-# 챌린지 수정, 삭제
+# 루틴 수정, 삭제
 
 {% hint style="warning" %}
-Challenge의 수정과 삭제는 Challenge가 시작되기 전에만 할 수 있습니다.
+Routine의 수정과 삭제는 Routine가 시작되기 전에만 할 수 있습니다.
 {% endhint %}
 
-## Challenge 수정
+## Routine 수정
 
-{% swagger baseUrl="{host}" method="put" path="/challenge/update/{challenge_no}" summary="update Challenge" %}
+{% swagger baseUrl="{host}" method="put" path="/routine/update/{routine_no}" summary="updateRoutine" %}
 {% swagger-description %}
 Challenge를 수정합니다.
 {% endswagger-description %}
@@ -27,13 +27,13 @@ application/json
 JWT Token
 {% endswagger-parameter %}
 
-{% swagger-response status="200" description="챌린지 수정완료" %}
+{% swagger-response status="200" description="루틴 수정완료" %}
 ```javascript
 {
     "status": "success",
-    "msg": "챌린지가 수정되었습니다.",
+    "msg": "루틴이 수정되었습니다.",
     "result" : {
-        "challenge_no" : 1
+        "routine_no" : 1
     }
 }
 ```
@@ -45,18 +45,18 @@ JWT Token
 {% endswagger %}
 
 {% hint style="info" %}
-모든 Challenge는 Smart Contract에 배포되므로 "인증방식" 부분만 수정 가능합니다.
+모든 Routine는 Smart Contract에 배포되므로 "인증방식" 부분만 수정 가능합니다.
 {% endhint %}
 
-## Challenge 삭제
+## Routine 삭제
 
-{% swagger baseUrl="{host}" method="delete" path="/challenge/delete/{challenge_no}" summary="delete Challenge" %}
+{% swagger baseUrl="{host}" method="delete" path="/routine/delete/{routine_no}" summary="delete Routine" %}
 {% swagger-description %}
 Challenge를 삭제합니다.
 {% endswagger-description %}
 
 {% swagger-parameter in="body" name="reason" type="string" required="true" %}
-챌린지 취소 사유
+루틴 취소 사유
 {% endswagger-parameter %}
 
 {% swagger-parameter in="header" name="Content-Type" type="string" required="true" %}
@@ -67,11 +67,11 @@ application/json
 JWT Token
 {% endswagger-parameter %}
 
-{% swagger-response status="200" description="챌린지 삭제완료" %}
+{% swagger-response status="200" description="루틴 삭제완료" %}
 ```javascript
 {
     "status": "success",
-    "msg": "챌린지가 수정되었습니다.",
+    "msg": "루틴이 수정되었습니다.",
     "result" : null
 ```
 {% endswagger-response %}
@@ -82,7 +82,7 @@ JWT Token
 {% endswagger %}
 
 {% hint style="danger" %}
-모든 Challenge는 Smart Contract로 처리됩니다.&#x20;
+모든 Routine은 Smart Contract로 처리됩니다.&#x20;
 
-챌린지 취소 시 작성한 사유가 참가자들에게 공유되고 참가비를 환불합니다.
+루틴 취소 시 작성한 사유가 참가자들에게 공유되고 참가비를 환불합니다.
 {% endhint %}

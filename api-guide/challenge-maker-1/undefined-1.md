@@ -1,5 +1,5 @@
 ---
-description: 챌린지에 인증을 업로드합니다.
+description: 루틴에 인증을 업로드합니다.
 ---
 
 # 인증 업로드
@@ -14,11 +14,11 @@ description: 챌린지에 인증을 업로드합니다.
 
 {% swagger baseUrl="{host}" method="post" path="/certification/upload" summary="Upload Certification" %}
 {% swagger-description %}
-챌린지에 해당하는 인증을 업로드합니다.
+루틴에 해당하는 인증을 업로드합니다.
 {% endswagger-description %}
 
 {% swagger-parameter in="body" name="challenge_no" required="true" type="string" %}
-챌린지 번호
+루틴 번호
 {% endswagger-parameter %}
 
 {% swagger-parameter in="body" name="certification" type="string" %}

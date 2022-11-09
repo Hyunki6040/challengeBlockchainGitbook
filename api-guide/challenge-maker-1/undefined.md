@@ -12,7 +12,7 @@ description: 나의 인증 여부와 가장 마지막 인증 결과를 조회합
 {% endswagger-description %}
 
 {% swagger-parameter in="body" name="challenge_no" required="true" type="string" %}
-챌린지 번호
+루틴 번호
 {% endswagger-parameter %}
 
 {% swagger-parameter in="header" name="Content-Type" type="string" required="true" %}
@@ -29,7 +29,7 @@ JWT Token
     "status": "success",
     "msg": null
     "result" : {
-        "challenge_no" : 1,
+        "routine_no" : 1,
         "certification": "인증내용",
         "certification_date": "인증일",
         "status": "인증 상태(success, process, fail)",
@@ -45,5 +45,5 @@ JWT Token
 {% endswagger %}
 
 {% hint style="info" %}
-&#x20;마지막 인증과 챌린지에 인증을 계속 진행할 수 있는 지 여부를 조회합니다.
+&#x20;마지막 인증과 루틴에 인증을 계속 진행할 수 있는 지 여부를 조회합니다.
 {% endhint %}
