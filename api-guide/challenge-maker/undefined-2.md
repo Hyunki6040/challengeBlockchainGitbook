@@ -52,7 +52,7 @@ JWT Token
 
 {% swagger baseUrl="{host}" method="delete" path="/routine/delete/{routine_no}" summary="delete Routine" %}
 {% swagger-description %}
-Routine을 삭제합니다.
+Challenge를 삭제합니다.
 {% endswagger-description %}
 
 {% swagger-parameter in="body" name="reason" type="string" required="true" %}
