@@ -12,7 +12,7 @@ Routine의 수정과 삭제는 Routine가 시작되기 전에만 할 수 있습�
 
 {% swagger baseUrl="{host}" method="put" path="/routine/update/{routine_no}" summary="updateRoutine" %}
 {% swagger-description %}
-Challenge를 수정합니다.
+Routine을 수정합니다.
 {% endswagger-description %}
 
 {% swagger-parameter in="body" name="certification" type="string" required="true" %}
@@ -52,7 +52,7 @@ JWT Token
 
 {% swagger baseUrl="{host}" method="delete" path="/routine/delete/{routine_no}" summary="delete Routine" %}
 {% swagger-description %}
-Challenge를 삭제합니다.
+Routine을 삭제합니다.
 {% endswagger-description %}
 
 {% swagger-parameter in="body" name="reason" type="string" required="true" %}
